@@ -78,7 +78,7 @@ export default function page() {
         </div>
       )}
       <div className="flex justify-center p-5">
-        <div className="container mt-14">
+        <div className="container mt-14 px-[150px] max-md:px-0">
           <div className="w-full flex justify-center items-center flex-col">
             <div className="max-md:text-center flex justify-center flex-col items-center w-[45rem] max-md:w-auto">
               <p className="text-5xl font-medium max-md:text-4xl">
@@ -93,12 +93,12 @@ export default function page() {
             </div>
           </div>
 
-          <div className="mt-10 text-white flex-1 font-extralight  h-96 bg-[#21325b] shadow-2xl shadow-slate-700 rounded-2xl  opacity-80 items-center text-center text-3xl cursor-pointer">
+          <div className="mt-10 text-black flex-1 font-extralight  h-96 bg-white shadow-2xl shadow-slate-700 rounded-2xl  opacity-80 items-center text-center text-3xl cursor-pointer">
             <div
               className="flex justify-center items-center flex-col w-full h-full p-5  "
               {...getRootProps()}
             >
-              <div className="hover:scale-[0.98] transition delay-100 duration-300 ease-in-out rounded-lg border-4 border-dashed border-gray-200 w-full h-full">
+              <div className="hover:scale-[0.98] transition delay-100 duration-300 ease-in-out rounded-lg border-4 border-dashed border-gray-600 w-full h-full">
                 <input {...getInputProps()} />
                 {isDragActive ? (
                   <p className="flex w-full h-full justify-center items-center flex-col">
@@ -107,7 +107,7 @@ export default function page() {
                 ) : (
                   <div className="flex w-full h-full justify-center items-center flex-col">
                     <p>
-                      <BsDownload className="text-[5rem] hover:scale-75 transition delay-100 duration-300 ease-in-out" />
+                      <BsDownload className="text-[4rem]" />
                     </p>
                     <p>
                       Dosyanızı buraya sürükleyin veya{' '}
